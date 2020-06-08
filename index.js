@@ -25,7 +25,7 @@ export function comdify (n) {
   }
 }
 
-// 去除千分位中的',
+// 去除千分位中的','
 export function delcommafy (num) {
   if (!num) return num
   num = num.toString()
@@ -33,7 +33,7 @@ export function delcommafy (num) {
   return num
 }
 
-// 获取输入框的值
+// 获取输入框的值，并加上千分位
 export function getInputValue (val) {
   let n = Number(val) < 0 ? '-' : ''
   if (Number(val) === 0) {
